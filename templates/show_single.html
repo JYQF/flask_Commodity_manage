@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查询商品</title>
+    <style>
+        body {
+	        background-color:  #fff2e5;
+	        margin-top: 50px;
+        }
+        h1{
+            width: 800px;
+            font-size: 60px;
+            font-family: STKaiti;
+            margin-left:600px;
+            margin-bottom:50px;
+        }
+        form {
+            width: 800px;
+            margin: 10px auto;
+        }
+        label {
+            width: 10%;
+            margin-right: 20px;
+            margin-bottom:40px;
+            font-size: 40px;
+            font-family: STKaiti;
+        }
+
+        input {
+            width: 60%;
+            height: 80px;
+            font-size: 40px;
+            margin-bottom:20px;
+            font-family: STKaiti;
+        }
+        #submit {
+            width: 40px;
+        }
+
+    </style>
+</head>
+<body>
+<h1>查询商品</h1>
+<div style="text-align:center;">
+    <form action="/show_single" method="POST">
+        <label for="id">要查询的商品编号:</label>
+        <input type="text" id="id" name="id" required>
+        <input type="submit" value="查询">
+    </form>
+</div>
+</body>
+</html>

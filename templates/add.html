@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加商品</title>
+    <style>
+    body {
+	    background-color:  #fff2e5;
+	    margin-top: 50px;
+    }
+    h1{
+        width: 800px;
+        font-size: 60px;
+        font-family: STKaiti;
+        margin-left:650px;
+        margin-bottom:50px;
+        }
+        form {
+        width: 800px;
+        margin: 10px auto;
+    }
+    label {
+        width: 10%;
+        margin-right: 20px;
+        margin-bottom:20px;
+        font-size: 40px;
+        font-family: STKaiti;
+    }
+
+    input {
+        width: 60%;
+        height: 80px;
+        font-size: 40px;
+        margin-bottom:20px;
+        font-family: STKaiti;
+    }
+    #submit {
+        width: 150px;
+    }
+
+    </style>
+</head>
+<body>
+<h1>添加商品</h1>
+<div style="text-align:center;">
+    <form action="/add" method="POST">
+        <label for="id">商品编号:</label><input type="text" id="id" name="id" required><br>
+        <label for="name">商品名称:</label><input type="text" id="name" name="name" required><br>
+        <label for="sum">商品数量:</label><input type="text" id="sum" name="sum" required><br>
+        <label for="price">商品价格:</label><input type="text" id="price" name="price" required><br>
+        <label for="data">商品备注:</label><input type="text" id="data" name="data" required><br>
+        <input type="submit" value="添加">
+    </form>
+</div>
+</body>
+</html>

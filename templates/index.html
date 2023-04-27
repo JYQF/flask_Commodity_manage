@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品管理系统</title>
+    <style>
+    body {
+	    background-color:  #fff2e5;
+	    margin-top: 70px;
+    }
+    h1{
+        width: 800px;
+        font-size: 60px;
+        font-family: STKaiti;
+        margin-left:450px;
+        margin-bottom:80px;
+    }
+    .buttons{
+    display: flex;
+            flex-direction: column; /* 设置为垂直排列 */
+            align-items: center;
+    }
+
+     .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+     }
+     /* 设置按钮样式 */
+     button {
+        margin-bottom: 20px; /* 设置按钮之间的间距 */
+	    margin-left: 30px;
+	    width: 300px;
+	    height: 70px;
+	    font-size: 38px;
+	    font-family: STKaiti;
+     }
+    </style>
+</head>
+<body>
+        <h1>欢迎来到商品管理系统</h1>
+
+<div class="center">
+    <div style="text-align:center;">
+        <div class="buttons">
+<a href="/add"><button>添加商品</button></a>
+<a href="/update"><button>修改商品</button></a>
+<a href="/delete"><button>删除商品</button></a>
+<a href="/show_single"><button>查看单个商品</button></a>
+<a href="/show_all"><button>查看所有商品</button></a>
+            </div>
+    </div>
+</div>
+
+</body>
+</html>

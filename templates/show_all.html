@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>所有商品信息</title>
+    <style>
+    body {
+	    background-color:  #fff2e5;
+    }
+
+    table {
+	    width: 1000px;
+	    margin: 20px auto;
+        border: 1px solid #000;
+        border-collapse: collapse;
+        font-size: 35px;
+        font-family: STKaiti;
+    }
+
+    h1{
+        width: 800px;
+        font-size: 60px;
+        font-family: STKaiti;
+        margin-left:600px;
+        margin-bottom:50px;
+    }
+    form {
+        width: 800px;
+        margin: 10px auto;
+    }
+    td {
+	    border: 1px solid #000;
+	    padding: 20px;
+    }
+    </style>
+</head>
+<body>
+<h1>商品信息</h1>
+<div style="text-align:center;">
+    <form action="/show_all" method="GET">
+    <table>
+      <tr>
+        	<td>商品编号</td>
+			<td>商品名称</td>
+			<td>商品数量</td>
+			<td>商品价格</td>
+			<td>商品备注</td>
+      </tr>
+        <p>{{ result|default('undefined') }}</p>
+      <% for result in results %>
+
+      <tr>
+        <td>{{ result[0] }}</td>
+          <td>{{ result[1] }}</td>
+          <td>{{ result[2] }}</td>
+          <td>{{ result[3] }}</td>
+          <td>{{ result[4] }}</td>
+      </tr>
+        <% endfor %>
+    </table>
+    </form>
+    </div>
+</body>
+</html>
